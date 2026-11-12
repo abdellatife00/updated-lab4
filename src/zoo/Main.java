@@ -34,17 +34,14 @@ public class Main {
             new Blowfish("Bubbles", true)
         };
 
-        System.out.println("\nSleeping:");
         sleepers[0].sleep();
         sleepers[1].sleep();
         sleepers[2].sleep();
 
-        System.out.println("\nMovement:");
         for (Animal animal : animals) {
             animal.move();
         }
 
-        System.out.println("\nNames:");
         for (Animal animal : animals) {
             AnimalName.name(animal.getName());
         }
